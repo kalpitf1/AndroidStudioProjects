@@ -1,0 +1,4 @@
+#Sat Feb 02 13:41:34 CST 2019
+base.0=/Users/kalpitfulwariya/AndroidStudioProjects/FloatingActionButtonBasic/Application/build/intermediates/transforms/dexMerger/debug/2
+path.0=classes.dex
+renamed.0=classes.dex
