@@ -4,7 +4,7 @@
             "outputFile": "/Users/kalpitfulwariya/AndroidStudioProjects/FloatingActionButtonBasic/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-bg/values-bg.xml",
             "map": [
                 {
-                    "source": "/Users/kalpitfulwariya/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/cdd63301ad6332f5631f89663aa1b2dd/res/values-bg/values-bg.xml",
+                    "source": "/Users/kalpitfulwariya/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/008ac13f542d7c15dea04251c42b9743/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/kalpitfulwariya/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/ff861833b787ae24ec70a9f484b74b48/res/values-bg/values-bg.xml",
+                    "source": "/Users/kalpitfulwariya/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a7af5377e6c02d593790b2f714c65860/res/values-bg/values-bg.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
