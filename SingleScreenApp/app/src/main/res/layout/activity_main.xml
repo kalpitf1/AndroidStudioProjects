@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FBE9E7">
+
+    <ImageView
+        android:id="@+id/pawicon"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:padding="20sp"
+        android:src="@drawable/dogpaw"
+        android:background="#B39DDB"/>
+
+    <ImageView
+        android:id="@+id/dogpic"
+        android:layout_width="match_parent"
+        android:layout_height="400sp"
+        android:scaleType="centerCrop"
+        android:layout_below="@+id/pawicon"
+        android:src="@drawable/cutedog" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paw Care"
+        android:layout_below="@+id/dogpic"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="3sp"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dog care shop"
+        android:layout_below="@id/title"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingBottom="20sp"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:id="@+id/pin"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/pin"
+        android:layout_below="@id/bio"
+        android:paddingTop="5sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"/>
+
+    <ImageView
+        android:id="@+id/iconcall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/iconcall"
+        android:layout_below="@id/pin"
+        android:paddingTop="5sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"/>
+
+    <ImageView
+        android:id="@+id/icontime"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/icontime"
+        android:layout_below="@id/iconcall"
+        android:paddingTop="5sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert address here"
+        android:layout_below="@id/bio"
+        android:layout_toRightOf="@id/pin"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert contact number here"
+        android:layout_below="@id/pin"
+        android:layout_toRightOf="@id/iconcall"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="insert open timings here"
+        android:layout_below="@id/iconcall"
+        android:layout_toRightOf="@id/icontime"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:paddingTop="10sp"
+        android:textSize="10dp"/>
+
+</RelativeLayout>
