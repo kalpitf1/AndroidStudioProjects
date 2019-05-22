@@ -6,7 +6,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.android.tennisscore.R;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -48,23 +47,45 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for Player A.
      */
     public void addPointPlayerA(View v) {
-        scorePlayerA = scorePlayerA + 15;
-        if(scorePlayerA == 60){
+        scorePlayerA = scorePlayerA + 1;
+        if(scorePlayerA == 4){
             gamePlayerA = gamePlayerA + 1;
             displayForGameA(gamePlayerA);
             scorePlayerA = 0;
             scorePlayerB = 0;
         }
-        displayForPlayerA(scorePlayerA);
-        displayForPlayerB(scorePlayerB);
+        displayForPlayerA(scorePlayerConverterA());
+        displayForPlayerB(scorePlayerConverterB());
     }
+
+    /**
+     * Convert the point 1 to 4 to corresponding tennis score system values for A.
+     */
+    public int scorePlayerConverterA(){
+        int convertedScore = 0;
+        switch(scorePlayerA){
+            case 1:
+                convertedScore = 15;
+                break;
+            case 2:
+                convertedScore = 30;
+                break;
+            case 3:
+                convertedScore = 40;
+                break;
+            case 4:
+                break;
+        }
+        return convertedScore;
+    }
+
     /**
      * Decrease the score for Player A.
      */
     public void deductPointPlayerA(View v) {
-        scorePlayerA = scorePlayerA - 15;
+        scorePlayerA = scorePlayerA - 1;
         if(scorePlayerA < 0){scorePlayerA = 0;}
-        displayForPlayerA(scorePlayerA);
+        displayForPlayerA(scorePlayerConverterA());
     }
     /**
      * Displays the given score for Player A.
@@ -83,23 +104,45 @@ public class MainActivity extends AppCompatActivity {
      * Increase the score for Player B.
      */
     public void addPointPlayerB(View v) {
-        scorePlayerB = scorePlayerB + 15;
-        if(scorePlayerB == 60){
+        scorePlayerB = scorePlayerB + 1;
+        if(scorePlayerB == 4){
             gamePlayerB = gamePlayerB + 1;
             displayForGameB(gamePlayerB);
             scorePlayerA = 0;
             scorePlayerB = 0;
         }
-        displayForPlayerA(scorePlayerA);
-        displayForPlayerB(scorePlayerB);
+        displayForPlayerA(scorePlayerConverterA());
+        displayForPlayerB(scorePlayerConverterB());
     }
+
+    /**
+     * Convert the point 1 to 4 to corresponding tennis score system values for B.
+     */
+    public int scorePlayerConverterB(){
+        int convertedScore = 0;
+        switch(scorePlayerB){
+            case 1:
+                convertedScore = 15;
+                break;
+            case 2:
+                convertedScore = 30;
+                break;
+            case 3:
+                convertedScore = 40;
+                break;
+            case 4:
+                break;
+        }
+        return convertedScore;
+    }
+
     /**
      * Decrease the score for Player B.
      */
     public void deductPointPlayerB(View v) {
-        scorePlayerB = scorePlayerB - 15;
+        scorePlayerB = scorePlayerB - 1;
         if(scorePlayerB < 0){scorePlayerB = 0;}
-        displayForPlayerB(scorePlayerB);
+        displayForPlayerB(scorePlayerConverterB());
     }
     /**
      * Displays the given score for Player B.
